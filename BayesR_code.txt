@@ -299,7 +299,7 @@ write.csv(output, file = paste("Meth_Outputs/", A, "_output.csv", sep = ""), row
 
 }
 
-## Combine the output files into one larger file with all 91 biomarkers 
+## Combine the output files into one larger file with all biomarkers 
 
 files  <- list.files("Meth_Outputs/", ".csv")
 tables <- lapply(paste("Meth_Outputs/",files,sep = ""), read.csv, header = TRUE)
