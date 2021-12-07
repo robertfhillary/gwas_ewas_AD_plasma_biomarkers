@@ -87,7 +87,7 @@ gen$Function[gen$Function %in% "intron_variant"] <- "intron variant"
 
 a = as.data.frame(table(gen$Function))
 a <- a[order(rev(a$Freq)),] 
-a$Proportion_of_Variants <- a$Freq/56
+a$Proportion_of_Variants <- a$Freq/64
 
 
 names(a)[1] <- "Function"
