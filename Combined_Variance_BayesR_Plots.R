@@ -3,7 +3,7 @@
 var = read.csv("Combined_Variance_bayes.csv")
 var = var[order(var$Mean_Combined_Variance_Explained), ]
 protein <- rep(var$SOMAmer, each=3)
-condition <- rep(c("Epigenetics" , "Genetics" , "Combined"), 276)
+condition <- rep(c("Epigenetics" , "Genetics" , "Combined"), 308)
 data <- data.frame(protein,condition)
 data$value <- 0
 var[,2] <- var[,2]*100
